@@ -3,5 +3,4 @@
 
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 
-
-<a href="https://github.com/pletnev-aa/python-project-lvl1/workflows/Python%20CI/badge.svg">
+![example workflow name](https://github.com/actions/python-project-lvl1/workflows/Python%20CI/badge.svg)
