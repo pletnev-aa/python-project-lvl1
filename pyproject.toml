@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pletnev-aa_brain_games"
+name = "hexlet-code"
 version = "0.1.0"
 description = ""
 authors = ["pletnev-aa"]
