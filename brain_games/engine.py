@@ -1,4 +1,5 @@
-from brain_games.games import game_even, game_calc, game_gcd, game_progression, game_prime
+from brain_games.games import game_even, game_calc,\
+    game_gcd, game_progression, game_prime
 from brain_games.cli import welcome_user
 import prompt
 
@@ -33,10 +34,15 @@ def status(*args):
 
 def get_description(game):
     description = {
-        game_even: 'Answer "yes" if the number is even, otherwise answer "no".',
-        game_calc: 'What is the result of the expression?',
-        game_gcd: 'Find the greatest common divisor of given numbers.',
-        game_progression: 'What number is missing in the progression?',
-        game_prime: 'Answer "yes" if given number is prime. Otherwise answer "no".'
+        game_even:
+            'Answer "yes" if the number is even, otherwise answer "no".',
+        game_calc:
+            'What is the result of the expression?',
+        game_gcd:
+            'Find the greatest common divisor of given numbers.',
+        game_progression:
+            'What number is missing in the progression?',
+        game_prime:
+            'Answer "yes" if given number is prime. Otherwise answer "no".'
     }
     return description[game]
