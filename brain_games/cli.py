@@ -79,7 +79,7 @@ def question_answer(game):
         stop = start + (step * num)
         progression = list(range(start, stop, step))
         len_progression = len(progression) - 1
-        hidden_num = randint(0, len_progression)
+        hidden_num = randint(1, len_progression)
         answer = progression[hidden_num]
         progression[hidden_num] = '..'
         question = ' '.join(map(str, progression))
