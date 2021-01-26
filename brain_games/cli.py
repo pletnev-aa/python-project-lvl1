@@ -43,14 +43,14 @@ def question_answer(game):
     char = '+-*'
     operation = choice(char)
     if game == 'prime':
-        denom = 2
+        divisor = 2
         remainder = 0
         if num_1 > 1:
             while True:
-                if denom * denom <= num_1 and remainder != 1:
-                    if num_1 % denom == 0:
+                if divisor * divisor <= num_1 and remainder != 1:
+                    if num_1 % divisor == 0:
                         remainder = remainder + 1
-                    denom = denom + 1
+                    divisor = divisor + 1
                 elif remainder == 1:
                     answer = 'no'
                     question = num_1
