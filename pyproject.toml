@@ -2,7 +2,8 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = "Brain-games"
-authors = ["apletnev-aa <apletnev@list.ru>"]
+authors = ["Pletnev <apletnev@list.ru>"]
+repository = "https://github.com/pletnev-aa/python-project-lvl1"
 packages = [
     { include = "brain_games" },
 ]
@@ -25,4 +26,8 @@ brain-prime = "brain_games.scripts.brain_prime:main"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
+classifiers = [
+    "Programming Language :: Python :: 3.6",
+]
 
