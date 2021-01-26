@@ -6,12 +6,12 @@ import prompt
 def welcome_user():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    print('Hello, {}!'.format(name))
     return name
 
 
 def status(*args):
     name = welcome_user()
+    print('Hello, {}!'.format(name))
     args = args[0]
     i = 0
     not_correct = "'{}' is wrong answer; (. Correct answer was '{}'."
@@ -43,15 +43,15 @@ def question_answer(game):
     char = '+-*'
     operation = choice(char)
     if game == 'prime':
-        a = 2
-        b = 0
+        denom = 2
+        remainder = 0
         if num_1 > 1:
             while True:
-                if a * a <= num_1 and b != 1:
-                    if num_1 % a == 0:
-                        b = b + 1
-                    a = a + 1
-                elif b == 1:
+                if denom * denom <= num_1 and remainder != 1:
+                    if num_1 % denom == 0:
+                        remainder = remainder + 1
+                    denom = denom + 1
+                elif remainder == 1:
                     answer = 'no'
                     question = num_1
                     return question, answer
@@ -75,8 +75,8 @@ def question_answer(game):
     elif game == 'progression':
         start = min(num_1, num_2)
         step = max(num_1, num_2) - start
-        n = randint(5, 10)
-        stop = start + (step * n)
+        num = randint(5, 10)
+        stop = start + (step * num)
         progression = list(range(start, stop, step))
         len_progression = len(progression) - 1
         hidden_num = randint(0, len_progression)
