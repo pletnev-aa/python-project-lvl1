@@ -1,9 +1,11 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
-authors = ["pletnev-aa"]
-packages = [{ include = "brain_games" },]
+description = "Brain-games"
+authors = ["apletnev-aa <apletnev@list.ru>"]
+packages = [
+    { include = "brain_games" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.6"
