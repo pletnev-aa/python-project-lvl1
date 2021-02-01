@@ -5,6 +5,7 @@
 
 ![Python CI](https://github.com/pletnev-aa/python-project-lvl1/workflows/Python%20CI/badge.svg)
 
+![hexlet-check](https://github.com/pletnev-aa/python-project-lvl1/workflows/hexlet-check/badge.svg)
 
 <h3>Brain-even</h3>
 <a href="https://asciinema.org/a/dLKasYCAnE1syRucKKRZYgDFx" target="_blank"><img src="https://asciinema.org/a/dLKasYCAnE1syRucKKRZYgDFx.svg" /></a>
